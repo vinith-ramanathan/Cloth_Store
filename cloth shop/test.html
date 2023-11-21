@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELITEBRAINS</title>
+    <link rel="icon" href="./books (1).png">
+    <meta name="GNANAPRATHIPRAJAN" content="Book Store">
+    <style>
+        *{
+            margin: 0px 0px;
+            padding: 0px 0px;
+        }
+        .logo img,h1{
+            display: inline;
+            position: fix;
+        }
+        /* .nav ul .l{
+           margin-left: 10%;
+           padding: 10px;
+        } */
+        .nav li{
+            display: inline;
+            padding: 20px 15px;   
+            border-radius: 5px;
+            font-weight: bolder;
+        }
+        body{background:linear-gradient(to right antiquewhite wheat red yellow);
+            width: auto;
+            height: auto;
+               }
+        .nav{background-color: antiquewhite;
+            margin: 10px 10px 0px 20px;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        .qut {
+            border-radius: 10px;
+            padding: 20px 20px 20px 20px;
+            margin: 10px 20px;
+            display:grid;
+            grid-template-columns: 30% 30% 30%;
+            gap: 20px;
+            background: antiquewhite; 
+            text-align: center;   
+        }
+        li:hover{
+            color:forestgreen
+        }
+        q:hover{
+            font-weight: bolder;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            transition-duration: 0s;
+        }
+        
+        .q{
+            position: relative;
+            padding: 0px 20px 0px 20px;
+            gap: 20px;
+        }
+        input{
+            border-radius: 10px;
+            padding: 20px 20px;
+            width: 400px;
+            height: 10px;
+            position: relative;
+            margin: 0px 0px 0px 300px ;
+            
+        }
+        input:focus{
+            background-color: greenyellow;
+            color: black;
+        }
+        .slidetrack{
+            display: flex; 
+        }
+        .slide{
+            background-color: antiquewhite; 
+            display: flex;
+            align-items: center;
+            padding: 15px 10px 20px 10px;
+            border-radius: 10px;
+            margin: auto;
+        }
+        .slide img{
+            border-radius: 10px;
+        }
+        img:hover{
+            transform: translateY(-10%);
+        }
+        .btnfam{
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+            text-align: center;
+
+        }
+        button{
+            background-color:antiquewhite;
+            width: 100px;
+            padding: 5px 5px;
+            border-radius: 10px;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+            box-shadow:0 0 5px antiquewhite,0 0 25px antiquewhite;
+            
+        }
+        button:hover{
+            box-shadow: 0 0 5px antiquewhite,0 0 25px antiquewhite, 0 0 50px antiquewhite,
+            0 0 75px antiquewhite,0 0 100px antiquewhite ;
+        }
+        input:hover{
+            border-color: chartreuse;
+            background-color: pink;
+        }
+       .scr h1{
+        background-color: antiquewhite;
+        color: black;
+        position: absolute;
+        padding: 10px 10px;
+        margin: 20px 20px;
+        border-radius: 10px;
+       }
+       .scr h1:hover{
+        color: darkcyan;
+       }
+       .a{
+        background-color: antiquewhite;
+        padding: 10px 10px;
+        border-radius: 10px;
+        text-shadow: burlywood 1px 2px 3px, blanchedalmond 2px 2px 2px;
+        font-weight: bolder;
+       }
+       
+        
+                
+    </style>
+</head>
+<body>
+    <div class="a">
+        <marquee behavior="alternate" direction="right">Rare Books For Rare People...!</marquee>
+    </div>
+    
+    <div class="nav">
+        <ul>
+            <li> <img src="./books (1).png" alt="btand Logo" title="Brand Logo" width="30px" height="30px"></li>
+            <h1>EliteBrains </h1></li>
+            <li class="l">Home</li>
+            <li class="l">Contact Us</li>
+            <li class="l">Book Themes</li>
+            <li class="l">About Us</li>
+            <input type="search" placeholder="What You Looking For?...&copy;" >
+        </ul>
+    </div>
+    <div class="qut">
+        <div class="q">
+            <q >
+                The more that you read, the more things you will know. The more that you learn, the more places you'll go.” “Books are a uniquely portable magic.
+            </q>
+        </div>
+        <div class="q">
+            <q>
+                The person, be it gentleman or lady, who has not pleasure in a good novel, must be intolerably stupid.
+            </q>
+        </div>
+       <div class="q">
+        <q >Good friends, good books, and a sleepy conscience: this is the ideal life.</q>
+       </div>
+    </div><hr size="4px solid">
+  <div class="slider">
+     <div class="slidetrack">
+        <div class="slide">
+            <img src="./thirukkural.jpg" alt="" width="200px" height="300px" onclick="trkl()">
+        </div>
+        <div class="slide">
+            <img src="./Thol.kap.jpg" alt=""width="200px" height="300px" onclick="tkpm()">
+        </div>
+        <div class="slide">
+            <img src="./Silapathikaaram.jpg" alt=""width="200px" height="300px" onclick="slpm()">
+        </div>
+        <div class="slide">
+            <img src="./thirukkural.jpg" alt=""width="200px" height="300px" onclick="trkl()">
+        </div>
+        <div class="slide">
+            <img src="./Ramayanam.jpg" alt=""width="200px" height="300px" onclick="ram()">
+        </div>
+        <div class="slide">
+            <img src="./kazhivarai-irukkai-52610.jpg" alt=""width="200px" height="300px" onclick="krkai()">
+        </div>   
+    </div>
+</div> <hr size="5px solid">
+<div class="btnfam">
+    <div class="btn">
+        <button onclick="trkl()">&#8377;500</button>
+    </div>
+    <div class="btn">
+        <button onclick="tkpm()">&#8377;1750</button>
+    </div>
+    <div class="btn">
+        <button onclick="slpm()">&#8377;800</button>
+    </div>
+    <div class="btn" >
+        <button onclick="trkl()">&#8377;500</button>
+    </div>
+    <div class="btn" >
+        <button onclick="ram()">&#8377;790</button>
+    </div>
+    <div class="btn" >
+        <button onclick="krkai()">&#8377;300</button>
+    </div>
+    
+</div>
+<div class="scr">
+    <h1 id="ot"></h1>
+</div>
+     
+
+<script>
+   function trkl()
+   {
+    var a=prompt('THIRUKURAL:Enter Required quantity');
+    var b=(500*1.05)*parseInt(a);
+    document.getElementById('ot').innerHTML=" THIRUKURAL:The Total Payable Amount With 5% GST is &#8377 "+ (b);
+   }
+   function tkpm()
+   {
+    var a=prompt('THOLKAAPPIYAM:Enter Required quantity');
+    var b=(1750*1.05)*parseInt(a);
+    document.getElementById('ot').innerHTML=" THOLKAAPPIYAM:The Total Payable Amount With 5% GST is &#8377 "+ (b);
+   }
+   function slpm()
+   {
+    var a=prompt('SILAPATHIGARAM:Enter Required quantity');
+    var b=(800*1.05)*parseInt(a);
+    document.getElementById('ot').innerHTML=" SILAPPATHIGARAM:The Total Payable Amount With 5% GST is &#8377 "+ (b);
+   }
+   function ram()
+   {
+    var a=prompt('RAMAYANAM:Enter Required quantity');
+    var b=(790*1.05)*parseInt(a);
+    document.getElementById('ot').innerHTML=" RAMAYANAM:The Total Payable Amount With 5% GST is &#8377 "+ (b);
+   }
+   function krkai()
+   {
+    var a=prompt('KAZHIVARAI IRUKKAI:Enter Required quantity');
+    var b=(300*1.05)*parseInt(a);
+    document.getElementById('ot').innerHTML=" KAZHIVARAI IRUKKAI:The Total Payable Amount With 5% GST is &#8377 "+ (b);
+   }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,592 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            border: 0;
+        }
+
+        .top1 {
+            background-color: antiquewhite;
+            width: 100%;
+            height: 90px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .top2 {
+            background-color: #575551;
+            width: 100%;
+            height: 110px;
+        }
+
+        .btn {
+            height: fit-content;
+        }
+
+        button {
+            background-color: #575551;
+            height: 33px;
+            color: white;
+            width: 90px;
+            border-radius: 10px;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        input {
+            width: 300px;
+            border-radius: 8px;
+            border: 1px solid black;
+            outline: none;
+        }
+
+        .center {
+            margin-top: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+        }
+
+        .brand {
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+        }
+
+        .slideshow {
+            width: 100%;
+            display: flex;
+            animation: slide 16s infinite;
+        }
+
+        .highlight {
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(to right, #92b3b2, #ded75b);
+            /* filter: blur(5px); */
+            border-radius: 10px;
+            border: 1px solid #92b3b2;
+            box-shadow: 0 8px 20px 0 #afb0ac;
+            position: absolute;
+        }
+
+        .highlight1 {
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        h2 {
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 900;
+        }
+
+        #img1 {
+            width: 100%;
+            height: 510px;
+        }
+
+        #img2 {
+            width: 100%;
+            height: 510px;
+        }
+
+        #img3 {
+            width: 100%;
+            height: 510px;
+        }
+
+        .container {
+            margin: 210px;
+            margin-left: 0%;
+            width: 100%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            overflow: hidden;
+            border: 20px solid #ffffff;
+            border-radius: 8px;
+            box-shadow: 10px 25px 30px rgba(30, 30, 200, 0.3);
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(-10%);
+            }
+
+            30% {
+                transform: translateX(-30%);
+            }
+
+            50% {
+                transform: translateX(-50%);
+            }
+
+            60% {
+                transform: translateX(-65%);
+            }
+
+            75% {
+                transform: translateX(-80%);
+            }
+
+            85% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(-125%);
+            }
+        }
+
+        .clothes {
+            padding-left: 300px;
+            margin-top: 750px;
+            display: flex;
+            max-width: 1400px;
+            max-height: 800px;
+            gap: 20px;
+        }
+
+        .image {
+            width: 20%;
+            height: 500px;
+            object-fit: cover;
+            transform: perspective(800px) rotateY(20deg);
+            transition: 0.5s;
+            cursor: pointer;
+        }
+
+        .clothes:hover img {
+            opacity: 0.5;
+        }
+
+        .clothes img:hover {
+            transform: perspective(800px) rotateY(0deg) scale(1.3);
+            z-index: 88;
+            opacity: 1;
+        }
+
+        h1 {
+            padding-top: 100px;
+            padding-left: 400px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+        }
+
+        .products:hover {
+            transform: perspective(800px) scale(0.9);
+        }
+
+        #vin {
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 25px;
+        }
+
+        .products {
+            cursor: pointer;
+        }
+
+        .quality {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .sale {
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(to right, #6ba2fa 20%, #dae1ed);
+        }
+
+        .sale h2 {
+            text-align: center;
+            color: rgb(52, 53, 67);
+            font-family: 'Times New Roman', Times, serif;
+            padding: 25px;
+        }
+
+        .reference {
+            width: 100%;
+            height: 300px;
+            background-color: #313442;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .support {
+            display: inline-block;
+            padding-top: 40px;
+        }
+
+        .header {
+            color: white;
+        }
+
+        .ad img {
+            width: 100%;
+        }
+
+        .ad img:hover {
+            transform: perspective(300px) scale(0.9);
+            transition: 0.5s ease-in-out;
+            cursor: pointer;
+        }
+
+        .form {
+            position: absolute;
+            top: -150%;
+            left: 50%;
+            opacity: 0;
+            width: 400px;
+            height: 450px;
+            background-color: white;
+            transform: translate(-50%, -50%) scale(1.25);
+            padding: 80px 60px;
+            box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
+
+        }
+
+        .active {
+            top: 50%;
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+            transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+        }
+
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            height: 25px;
+            width: 25px;
+            border-radius: 15px;
+            text-align: center;
+            color: white;
+            cursor: pointer;
+            background-color: #707d74;
+        }
+
+        .close-button:hover {
+            background-color: red;
+            height: 25px;
+            width: 25px;
+            text-align: center;
+            color: white;
+            border-radius: 15px;
+        }
+
+        .form-element {
+            margin: 15px 0;
+        }
+
+        .form-element label {
+            color: #000;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .form-element input[type="text"],
+        .form-element input[type="password"] {
+            width: 100%;
+            margin-top: 8px;
+            display: block;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        .form-element button {
+            width: 100%;
+            height: max-content;
+            background-color: #458eff;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: large;
+            border: none;
+            cursor: pointer;
+        }
+
+        .form-element button:hover {
+            background-color: #125688;
+            color: white;
+        }
+
+        .form-element input[type="checkbox"] {
+            margin-right: 10px;
+            height: 15px;
+            width: 15px;
+        }
+
+        .form-element a {
+            text-decoration: none;
+            display: block;
+            text-align: right;
+            color: #458eff;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top1">
+        <div class="logo">
+            <h3 id="vin">KING TRAVELS &#129321</h3>
+            <!-- <img src="./cloth shop content/Ajio-Logo.svg" alt="" height="90px" width="90px"> -->
+        </div>
+        <div class="center">
+            <div class="btn">
+                <input type="search" placeholder="search...">
+                <button>search</button>
+            </div>
+            <div class="btn btn-warning" id="signup" onclick="openpopup()">
+                Sign in
+            </div>
+        </div>
+    </div>
+    <div class="top2">
+        <div class="brand">
+            <h4>SUPER STORES</h4>
+        </div>
+        <div class="links">
+            <a href="">MEN</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="">WOMEN</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="">KIDS</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="">OFFERS</a>
+        </div>
+    </div>
+    <div class="highlight">
+        <div class="highlight1">
+            <h2>ENTERING THE PARADISE OF CLOTHES !!</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="slideshow">
+            <img src="./cloth shop content/men.jpg" alt="" id="img1">
+            <img src="./cloth shop content/women.jpg" alt="" id="img2">
+            <img src="./cloth shop content/kids.webp" alt="" id="img3">
+        </div>
+    </div>
+    <div class="clothes">
+        <img src="./cloth shop content/buy1.jpeg" alt="" class="image">
+        <img src="./cloth shop content/buy2.webp" alt="" class="image">
+        <img src="./cloth shop content/buy3.webp" alt="" class="image">
+        <img src="./cloth shop content/buy4.webp" alt="" class="image">
+    </div>
+    <h1>Exploring the ultimate collections !!!</h1>
+    <div class="collections1">
+        <img src="./cloth shop content/Tiles-Ajio_tops.avif" alt="" class="products" onclick=tops()>
+        <img src="./cloth shop content/Tiles-Ajio_jeans.avif" alt="" class="products" onclick=jeans()>
+        <img src="./cloth shop content/Tiles-Ajio_kurtis.avif" alt="" class="products" onclick=kurtis()>
+        <img src="./cloth shop content/Tiles-Ajio_tracks.avif" alt="" class="products" onclick=tracks()>
+    </div>
+    <div class="collections2">
+        <img src="./cloth shop content/Tiles-Ajio_frocks.avif" alt="" class="products" onclick="frocks()">
+        <img src="./cloth shop content/Tiles-Ajio_salwar.avif" alt="" class="products" onclick="salwar()">
+        <img src="./cloth shop content/Tiles-Ajio_shirts.avif" alt="" class="products" onclick="shirts()">
+        <img src="./cloth shop content/Tiles-Ajio_t-shirt.avif" alt="" class="products" onclick="tshirt()">
+    </div>
+    <div class="ad">
+        <img src="./cloth shop content/Trending-as-per-season-Occassional-wear-anarkali-kurtas.avif" alt="">
+    </div>
+    <div class="sale">
+        <h2>Great Indian sale is Live now</h2>
+    </div>
+    <div class="quality">
+        <img src="./cloth shop content/images.png" alt="">
+        <img src="./cloth shop content/images (1).png" alt="">
+        <img src="./cloth shop content/images (2).png" alt="">
+    </div>
+    <div class="reference">
+        <section class="support">
+            <div class="about">
+                <div class="header">VINI</div>
+            </div><br>
+            <div class="content1">
+                <a href="#">Who we are</a><br><a href="#">Join our team</a><br><a href="#">Terms & conditions</a><br>
+                <a href="#">We respect your privacy</a><br><a href="#">Fees & payments</a>
+            </div>
+        </section>
+        <section class="support">
+            <div class="about">
+                <div class="header">Help</div>
+            </div><br>
+            <div class="content1">
+                <a href="#">Track your orders</a><br><a href="#">FAQs</a><br><a href="#">Returns</a><br>
+                <a href="#">Cancellation</a><br><a href="#">Payments</a><br><a href="#">Customer service</a>
+            </div>
+        </section>
+        <section class="support">
+            <div class="about">
+                <div class="header">Follow Us</div>
+            </div><br>
+            <div class="content1">
+                <a href="#">Facebook</a><br><a href="#">Instagram</a><br><a href="#">Twitter</a><br>
+                <a href="#">Pinterest</a>
+            </div>
+        </section>
+    </div>
+    <div class="popup">
+        <div class="form" id="popup">
+            <div class="close-button" onclick="closepopup()">&times;</div>
+            <div class="form-element">
+                <label for="">Username</label>
+                <input type="text" id="username" placeholder="username">
+            </div>
+            <div class="form-element">
+                <label for="">Password</label>
+                <input type="password" id="password" placeholder="password">
+            </div>
+            <div class="form-element"><input type="checkbox">Remember login</div>
+            <div class="form-element">
+                <button>Log in</button>
+            </div>
+            <div class="form-element">
+                <a href="#">Forget password?</a>
+            </div>
+        </div>
+    </div>
+    <div class="container1">
+        <table class="table table-primary">
+            <tbody>
+                <tr>
+                    <th>S.No</th>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Amount to be paid</th>
+                </tr>
+                <tr>
+                    <td id="s1">1.</td>
+                    <td id="pro1"></td>
+                    <td id="qua"></td>
+                    <td id="amt"></td>
+                    <th id="total"></th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+<script>
+    function tops() {
+        var d = alert("Top : Rs.699 " + " Offer Price : Rs.343 (49% off)");
+        var c = prompt("Enter the product name :");
+        var a = prompt("Enter the quantity :");
+        document.getElementById('qua').innerHTML = a;
+        document.getElementById('pro1').innerHTML = c;
+        var b = 343 * parseInt(a);
+        document.getElementById('amt').innerHTML = (b);
+        document.getElementById('total').innerHTML = (b);
+    }
+    function jeans() {
+        var d = alert("Jean : Rs.999 " + " Offer Price : Rs.699 (31% off)");
+        var c = prompt("Enter the dress name :");
+        var a = prompt("Enter the quantity :");
+        document.getElementById('qua').innerHTML = a;
+        document.getElementById('pro1').innerHTML = c;
+        var b = 699 * parseInt(a);
+        document.getElementById('amt').innerHTML = (b);
+        document.getElementById('total').innerHTML = (b);
+    }
+    function kurtis() {
+        var d = alert("Kurti : Rs.1299 " + " Offer Price : Rs.662 (49% off)");
+        var c = prompt("Enter the dress name :");
+        var a = prompt("Enter the quantity :");
+        document.getElementById('qua').innerHTML = a;
+        document.getElementById('pro1').innerHTML = c;
+        var b = 662 * parseInt(a);
+        document.getElementById('amt').innerHTML = (b);
+        document.getElementById('total').innerHTML = (b);
+    }
+    function tracks() {
+        var d = alert("Track : Rs.749 " + " Offer Price : Rs.367 (51% off)");
+        var c = prompt("Enter the dress name :");
+        var a = prompt("Enter the quantity :");
+        document.getElementById('qua').innerHTML = a;
+        document.getElementById('pro1').innerHTML = c;
+        var b = 367 * parseInt(a);
+        document.getElementById('amt').innerHTML = (b);
+        document.getElementById('total').innerHTML = (b);
+    }
+    function frocks() {
+        var d = alert("Frock : Rs.799 " + " Offer Price : Rs.392 (51% off)");
+        var c = prompt("Enter the dress name :");
+        var a = prompt("Enter the quantity :");
+        document.getElementById('qua').innerHTML = a;
+        document.getElementById('pro1').innerHTML = c;
+        var b = 392 * parseInt(a);
+        document.getElementById('amt').innerHTML = (b);
+        document.getElementById('total').innerHTML = (b);
+    }
+    function salwar() {
+        var d = alert("Salwar : Rs.399 " + " Offer Price : Rs.355 (10% off)");
+        var c = prompt("Enter the dress name :");
+        var a = prompt("Enter the quantity :");
+        document.getElementById('qua').innerHTML = a;
+        document.getElementById('pro1').innerHTML = c;
+        var b = 355 * parseInt(a);
+        document.getElementById('amt').innerHTML = (b);
+        document.getElementById('total').innerHTML = (b);
+    }
+    function shirts() {
+        var d = alert("Shirt : Rs.999 " + " Offer Price : Rs.699 (31% off)");
+        var c = prompt("Enter the dress name :");
+        var a = prompt("Enter the quantity :");
+        document.getElementById('qua').innerHTML = a;
+        document.getElementById('pro1').innerHTML = c;
+        var b = 699 * parseInt(a);
+        document.getElementById('amt').innerHTML = (b);
+        document.getElementById('total').innerHTML = (b);
+    }
+    function tshirt() {
+        var d = alert("Tshirt : Rs.499 " + " Offer Price : Rs.250 (38% off)");
+        var c = prompt("Enter the dress name :");
+        var a = prompt("Enter the quantity :");
+        document.getElementById('qua').innerHTML = a;
+        document.getElementById('pro1').innerHTML = c;
+        var b = 250 * parseInt(a);
+        document.getElementById('amt').innerHTML = (b);
+        document.getElementById('total').innerHTML = (b);
+    }
+    let popup = document.getElementById("popup");
+
+    function openpopup() {
+        popup.classList.add("active");
+    }
+    function closepopup() {
+        popup.classList.remove("active");
+    }
+</script>
+
+</html>
